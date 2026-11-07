@@ -200,8 +200,7 @@ function renderSteps(b) {
             }),
             " ", el("span", {}, t.text), t.min ? el("span", { class: "muted" }, ` (${t.min} min)`) : ""),
           t.open ? openLink(t.open) : "",
-          t.say ? el("div", { class: "say" }, ...t.say.map((p) => el("span", { class: "sayItem" }, playBtn(p), p,
-            translate(p) ? el("span", { class: "en" }, ` · ${translate(p)}`) : ""))) : "");
+          t.say ? el("div", { class: "say" }, ...t.say.map(sayItem)) : "");
       })));
     if (openDays.has(dayKey) || (!openDays.size && di === firstOpen)) details.open = true;
     details.addEventListener("toggle", () => { details.open ? openDays.add(dayKey) : openDays.delete(dayKey); });
@@ -216,6 +215,21 @@ function renderSteps(b) {
 // English for a Portuguese phrase: the plan's glossary first, then the phrase list.
 function translate(pt) {
   return state.plan.glossary?.[pt] || state.phrases.find((p) => p.pt === pt)?.en || "";
+}
+
+// A Portuguese phrase with its English hidden: hover (or focus) shows it as a tooltip; on a phone, tap to reveal.
+const canHover = matchMedia("(hover: hover)");
+function sayItem(p) {
+  const en = translate(p);
+  if (!en) return el("span", { class: "sayItem" }, playBtn(p), p);
+  const item = el("span", { class: "sayItem" }, playBtn(p),
+    el("span", {
+      class: "word", tabindex: "0", role: "button", title: canHover.matches ? "" : "Tap for English",
+      onclick: () => { if (!canHover.matches) item.classList.toggle("show"); },
+      onkeydown: (e) => { if (e.key === "Enter") item.classList.toggle("show"); },
+    }, p),
+    el("span", { class: "en" }, en));
+  return item;
 }
 
 // A step can point at a tab of the app, e.g. { "tab": "cards", "topic": "Everyday" }.

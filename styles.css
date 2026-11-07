@@ -62,7 +62,21 @@ ul.tasks li { padding: 0.35rem 0; border-top: 1px dashed var(--line); }
 ul.tasks li.done > label > span:first-of-type { text-decoration: line-through; color: var(--muted); }
 .say { display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; margin: 0.3rem 0 0 1.6rem; font-size: 0.95rem; }
 .sayItem { white-space: nowrap; }
-.sayItem .en { color: var(--muted); font-size: 0.9em; }
+.sayItem { position: relative; }
+.sayItem .word { border-bottom: 1px dotted var(--muted); cursor: pointer; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; outline: none; }
+.sayItem .en { display: none; color: var(--muted); font-size: 0.9em; }
+.sayItem .en::before { content: " · "; }
+.sayItem.show .en { display: inline; }
+.sayItem.show .word { border-bottom-color: transparent; }
+@media (hover: hover) {
+  .sayItem .word { cursor: help; }
+  .sayItem .word:hover + .en, .sayItem .word:focus-visible + .en {
+    display: block; position: absolute; bottom: calc(100% + 4px); left: 1.4rem; z-index: 10;
+    background: var(--ink); color: #fff; padding: 0.25rem 0.55rem; border-radius: 6px; font-size: 0.85rem; white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); pointer-events: none;
+  }
+  .sayItem .word:hover + .en::before, .sayItem .word:focus-visible + .en::before { content: none; }
+}
 details.manual { margin: 1rem 0; }
 details.manual summary { cursor: pointer; color: var(--accent); }
 button.openlink { display: inline-block; margin: 0.35rem 0 0 1.6rem; padding: 0.3rem 0.75rem; border-color: var(--accent); color: var(--accent); background: var(--accent-soft); font-size: 0.9rem; }
