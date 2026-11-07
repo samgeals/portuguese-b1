@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Portuguese A1 → B1</title>
+  <meta name="theme-color" content="#0f766e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Português" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="title">Portuguese A1 → B1</h1>
+    <p id="goal" class="muted"></p>
+    <div class="speechbar muted small">
+      <label><input type="checkbox" id="slowSpeech" /> Slow audio</label>
+      <select id="voiceSelect" hidden aria-label="Voice"></select>
+      <span id="voiceNote"></span>
+    </div>
+  </header>
+  <nav id="tabs">
+    <button data-tab="plan" class="active">Plan</button>
+    <button data-tab="phrases">Phrases</button>
+    <button data-tab="cards">Flashcards</button>
+    <button data-tab="log">Study log</button>
+    <button data-tab="situations">Situations</button>
+  </nav>
+
+  <main>
+    <section id="plan" class="tab active"></section>
+
+    <section id="phrases" class="tab">
+      <div class="filters">
+        <select id="topicFilter"><option value="">All topics</option></select>
+        <select id="levelFilter">
+          <option value="">All levels</option><option>A1</option><option>A2</option><option>B1</option>
+        </select>
+        <label><input type="checkbox" id="hideKnown" /> Hide known</label>
+      </div>
+      <table class="grid">
+        <thead><tr><th>Português</th><th>English</th><th>Topic</th><th>Level</th><th>Known</th></tr></thead>
+        <tbody id="phraseRows"></tbody>
+      </table>
+    </section>
+
+    <section id="cards" class="tab">
+      <div class="filters">
+        <select id="cardTopic"><option value="">All topics</option></select>
+        <select id="cardLevel">
+          <option value="">All levels</option><option>A1</option><option>A2</option><option>B1</option>
+        </select>
+        <label><input type="checkbox" id="cardReverse" /> English → Português</label>
+        <label><input type="checkbox" id="autoSpeak" /> Play automatically</label>
+      </div>
+      <p id="cardLevelTag" class="muted"></p>
+      <div id="card" class="card" tabindex="0">
+        <div id="cardFront"></div>
+        <div id="cardBack" class="hidden"></div>
+      </div>
+      <div class="row">
+        <button id="cardSpeak" title="Play the Portuguese (P)">🔊 Play</button>
+        <button id="flip">Show answer</button>
+        <button id="again">Again</button>
+        <button id="gotIt">Got it</button>
+      </div>
+      <p id="cardStats" class="muted"></p>
+      <p class="muted small keys">Keys: <kbd>Space</kbd> show answer · <kbd>1</kbd> again · <kbd>2</kbd> got it · <kbd>P</kbd> play. Cards you get right come back after 1, 3, 7, 14 and 30 days.</p>
+    </section>
+
+    <section id="log" class="tab">
+      <p class="muted small">Logged automatically: time you spend in Flashcards and Phrases (it pauses when you stop for 90 seconds) and the minutes of each week-plan step you tick.</p>
+      <div id="hoursSummary"></div>
+      <table class="grid">
+        <thead><tr><th>Date</th><th>Flashcards</th><th>Phrases</th><th>Week plan</th><th>Other</th><th>Total (min)</th></tr></thead>
+        <tbody id="logRows"></tbody>
+      </table>
+      <details class="manual">
+        <summary>Add study done away from the app (tutor, podcast, a real chat…)</summary>
+        <form id="logForm" class="row">
+          <input type="date" id="logDate" required />
+          <input type="number" id="logMinutes" min="1" placeholder="Minutes" required />
+          <select id="logType">
+            <option>Tutor</option><option>Listening</option><option>Real-life chat</option><option>Reading</option>
+            <option>Shadowing</option><option>Grammar</option><option>Anki</option>
+          </select>
+          <button type="submit">Add</button>
+        </form>
+        <ul id="manualRows" class="small"></ul>
+      </details>
+      <div class="row">
+        <button id="exportBtn">Export progress</button>
+        <label class="button">Import progress <input type="file" id="importFile" accept="application/json" hidden /></label>
+      </div>
+    </section>
+
+    <section id="situations" class="tab"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

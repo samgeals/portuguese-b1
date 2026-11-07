@@ -1,0 +1,611 @@
+{
+  "title": "European Portuguese: A1 → B1",
+  "goal": "Reach European Portuguese B1 in about 15 months at 5–6 hours a week.",
+  "hoursTargets": {
+    "A1": 100,
+    "A2": 200,
+    "B1": 375
+  },
+  "pronunciation": [
+    {
+      "sound": "Unstressed e",
+      "what": "Almost disappears",
+      "examples": "telefone → \"tlfon\", pequeno → \"pkenu\""
+    },
+    {
+      "sound": "Unstressed o",
+      "what": "Becomes \"oo\"",
+      "examples": "obrigado, bolo → \"bolu\""
+    },
+    {
+      "sound": "s / z at end of a syllable",
+      "what": "\"sh\" / \"zh\"",
+      "examples": "dois → \"doish\", mesmo → \"mezhmu\""
+    },
+    {
+      "sound": "Nasal vowels",
+      "what": "Through the nose",
+      "examples": "pão, mãe, bom, sim"
+    },
+    {
+      "sound": "lh / nh",
+      "what": "Like \"lli\" in million / \"ny\"",
+      "examples": "filha, ninho"
+    },
+    {
+      "sound": "r at start / rr",
+      "what": "Throaty, like French r",
+      "examples": "rua, carro"
+    },
+    {
+      "sound": "r between vowels",
+      "what": "Light tap",
+      "examples": "caro, agora"
+    },
+    {
+      "sound": "ão",
+      "what": "Nasal \"ow\"",
+      "examples": "não, informação"
+    }
+  ],
+  "stages": [
+    {
+      "id": "A1",
+      "name": "Survival",
+      "months": "1–3",
+      "summary": "Order anywhere, give directions to the house, book appointments, chat about family for 10 minutes.",
+      "blocks": [
+        {
+          "id": "b1",
+          "name": "Hello & me",
+          "when": "Weeks 1–2",
+          "grammar": "Subject pronouns (eu, tu, ele/ela, você, nós, eles); ser (sou, é, somos, são); questions with intonation",
+          "vocab": "Greetings, please/thank you, numbers 0–20, family (mãe, pai, filha, companheiro)",
+          "task": "Introduce yourself to the babysitter and a neighbour",
+          "steps": {
+            "title": "Week 1, step by step",
+            "days": [
+              {
+                "day": "Day 1",
+                "focus": "Greetings and the sounds of Portugal",
+                "tasks": [
+                  {
+                    "min": 10,
+                    "text": "Play each greeting, then say it out loud 3 times. Note: bom dia until lunch, boa tarde until dark, boa noite after.",
+                    "say": [
+                      "Olá",
+                      "Bom dia",
+                      "Boa tarde",
+                      "Boa noite",
+                      "Adeus",
+                      "Até logo",
+                      "Até amanhã"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Polite words. Women say obrigada, men say obrigado.",
+                    "say": [
+                      "Por favor",
+                      "Obrigada",
+                      "Obrigado",
+                      "De nada",
+                      "Desculpe",
+                      "Com licença"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Plan tab → Pronunciation: play every example in the 'Nasal vowels' and 'ão' rows and copy them.",
+                    "say": [
+                      "pão",
+                      "mãe",
+                      "não",
+                      "sim",
+                      "bom"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Flashcards: one session on the Everyday topic.",
+                    "inApp": true
+                  }
+                ]
+              },
+              {
+                "day": "Day 2",
+                "focus": "Saying who you are",
+                "tasks": [
+                  {
+                    "min": 10,
+                    "text": "Learn the intro phrases. In Portugal the pronoun goes after the verb: chamo-me, not me chamo.",
+                    "say": [
+                      "Chamo-me …",
+                      "Sou de …",
+                      "Moro em …",
+                      "Muito prazer",
+                      "Prazer em conhecê-lo",
+                      "Prazer em conhecê-la"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Write your own 4-line intro: name, where you're from, where you live, 'muito prazer'."
+                  },
+                  {
+                    "min": 10,
+                    "text": "Record yourself reading it on your phone. Play the app's version of each line and compare."
+                  },
+                  {
+                    "min": 10,
+                    "text": "Flashcards: one session (due cards + new ones).",
+                    "inApp": true
+                  }
+                ]
+              },
+              {
+                "day": "Day 3",
+                "focus": "ser and the pronouns",
+                "tasks": [
+                  {
+                    "min": 10,
+                    "text": "Learn ser in the present. Play and repeat each form.",
+                    "say": [
+                      "Eu sou",
+                      "Tu és",
+                      "Ele é",
+                      "Ela é",
+                      "Você é",
+                      "Nós somos",
+                      "Eles são",
+                      "Elas são"
+                    ]
+                  },
+                  {
+                    "min": 5,
+                    "text": "Tu is for friends, family and kids. With a neighbour you don't know, skip the pronoun or use o senhor / a senhora.",
+                    "say": [
+                      "O senhor é daqui?",
+                      "A senhora é daqui?",
+                      "É daqui?"
+                    ]
+                  },
+                  {
+                    "min": 15,
+                    "text": "Write 6 sentences with ser about people you know (e.g. 'A Maria é muito simpática'). Read each aloud.",
+                    "say": [
+                      "A Maria é muito simpática",
+                      "Nós somos vizinhos"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Flashcards: one session.",
+                    "inApp": true
+                  }
+                ]
+              },
+              {
+                "day": "Day 4",
+                "focus": "Numbers 0–20",
+                "tasks": [
+                  {
+                    "min": 10,
+                    "text": "Play and repeat 0–10. One and two change with gender: um/uma, dois/duas.",
+                    "say": [
+                      "zero",
+                      "um, uma",
+                      "dois, duas",
+                      "três",
+                      "quatro",
+                      "cinco",
+                      "seis",
+                      "sete",
+                      "oito",
+                      "nove",
+                      "dez"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Play and repeat 11–20.",
+                    "say": [
+                      "onze",
+                      "doze",
+                      "treze",
+                      "catorze",
+                      "quinze",
+                      "dezasseis",
+                      "dezassete",
+                      "dezoito",
+                      "dezanove",
+                      "vinte"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Say your phone number digit by digit, then ages: 'Tenho … anos'.",
+                    "say": [
+                      "Tenho … anos",
+                      "Quantos anos tem?",
+                      "Qual é o seu número de telefone?"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Flashcards: one session.",
+                    "inApp": true
+                  }
+                ]
+              },
+              {
+                "day": "Day 5",
+                "focus": "Family and yes/no questions",
+                "tasks": [
+                  {
+                    "min": 10,
+                    "text": "Family words. Play and repeat.",
+                    "say": [
+                      "a mãe",
+                      "o pai",
+                      "a filha",
+                      "o filho",
+                      "o companheiro",
+                      "a companheira",
+                      "o irmão",
+                      "a irmã"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Introduce your family.",
+                    "say": [
+                      "Esta é a minha filha, a Maria",
+                      "Este é o meu companheiro",
+                      "Ela tem … anos"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Questions use the same words as statements; only the voice goes up. Play both and hear the difference.",
+                    "say": [
+                      "É inglesa.",
+                      "É inglesa?",
+                      "Tem filhos?",
+                      "Mora aqui?"
+                    ]
+                  },
+                  {
+                    "min": 10,
+                    "text": "Flashcards: one session.",
+                    "inApp": true
+                  }
+                ]
+              },
+              {
+                "day": "Day 6",
+                "focus": "Real life: the babysitter and a neighbour",
+                "tasks": [
+                  {
+                    "min": 10,
+                    "text": "Write a short script for meeting the babysitter or a neighbour, using days 1–5.",
+                    "say": [
+                      "Olá, bom dia! Chamo-me …",
+                      "Moro aqui ao lado",
+                      "Esta é a minha filha, a Maria",
+                      "Desculpe, pode falar mais devagar?",
+                      "Muito prazer!"
+                    ]
+                  },
+                  {
+                    "min": 15,
+                    "text": "Rehearse the script aloud 3 times, with Slow audio on and then off."
+                  },
+                  {
+                    "min": 10,
+                    "text": "Do it for real: say at least the first two lines to a neighbour, shopkeeper or the babysitter."
+                  }
+                ]
+              },
+              {
+                "day": "Day 7",
+                "focus": "Review",
+                "tasks": [
+                  {
+                    "min": 15,
+                    "text": "Flashcards: clear every due card.",
+                    "inApp": true
+                  },
+                  {
+                    "min": 10,
+                    "text": "Record your full intro again and compare it with Day 2's recording."
+                  },
+                  {
+                    "min": 10,
+                    "text": "Redo any task from this week you skipped or found hard."
+                  },
+                  {
+                    "min": 5,
+                    "text": "Open the Study log and look at your week: aim for about 5 hours.",
+                    "inApp": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "b2",
+          "name": "Café & market",
+          "when": "Weeks 3–4",
+          "grammar": "querer + queria (polite \"I'd like\"); articles o/a/os/as, um/uma; gender & plural",
+          "vocab": "Café drinks, fruit & veg, quantities (meio quilo, um quilo), numbers to 100, prices",
+          "task": "Order coffee and buy fruit in Portuguese every time"
+        },
+        {
+          "id": "b3",
+          "name": "Where things are",
+          "when": "Weeks 5–6",
+          "grammar": "estar (location, temporary states); em/no/na, ao lado de, em frente a; imperative for directions (vire, siga)",
+          "vocab": "Directions, house words, colours, street words (rua, rotunda, portão)",
+          "task": "Write and learn your 'directions to the house' script; use it with a courier"
+        },
+        {
+          "id": "b4",
+          "name": "My day",
+          "when": "Weeks 7–8",
+          "grammar": "Regular present -ar / -er / -ir (falar, comer, abrir); ter, ir, fazer",
+          "vocab": "Days, times (às dez, de manhã), daily routine verbs, school words",
+          "task": "Ask the teacher what Maria needs to bring"
+        },
+        {
+          "id": "b5",
+          "name": "Booking things",
+          "when": "Weeks 9–10",
+          "grammar": "poder (pode …?); preciso de; question words (quando, onde, quanto, porquê)",
+          "vocab": "Months, dates, appointments (marcar, consulta, limpeza), body basics",
+          "task": "Book a dentist appointment in Portuguese (appointment itself in English)"
+        },
+        {
+          "id": "b6",
+          "name": "Parcels & fish",
+          "when": "Weeks 11–12",
+          "grammar": "Demonstratives (este/esse/aquele); gostar de; há (there is)",
+          "vocab": "Post office, parcels, fish counter (limpar, postas, espinhas), \"Mais alguma coisa?\"",
+          "task": "Collect a parcel; buy fish and ask them to clean it"
+        }
+      ],
+      "milestones": [
+        "Top 500 words in Anki",
+        "10-minute tutor conversation about family and your day, no English",
+        "Order, shop at the market and give directions without switching to English",
+        "Book one appointment by phone or message in Portuguese"
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "Everyday life",
+      "months": "4–8",
+      "summary": "Talk about the past, handle check-in and symptoms at the doctor, understand courier and marketing calls, sit CIPLE.",
+      "blocks": [
+        {
+          "id": "b7",
+          "name": "What happened",
+          "when": "Month 4",
+          "grammar": "Pretérito perfeito (falei, comi, fui, fiz, tive)",
+          "vocab": "Time words (ontem, no fim de semana, há dois dias), weekend activities",
+          "task": "Tell the tutor about last weekend; ask the teacher how the day went"
+        },
+        {
+          "id": "b8",
+          "name": "How things were",
+          "when": "Month 5",
+          "grammar": "Imperfeito (falava, era, tinha) vs perfeito; costumava",
+          "vocab": "Childhood, describing places and people, weather",
+          "task": "Describe your childhood and where you grew up"
+        },
+        {
+          "id": "b9",
+          "name": "Swim & play",
+          "when": "Month 6",
+          "grammar": "Imperatives for instructions (bate, sopra, salta, segura); estar a + infinitive",
+          "vocab": "Swim class words, body parts, kids' activities, praise",
+          "task": "Understand the swim instructor's feedback without asking twice"
+        },
+        {
+          "id": "b10",
+          "name": "Doctor stage 2",
+          "when": "Month 7",
+          "grammar": "Reflexive verbs (sentir-se, magoar-se); object pronouns (o, a, lhe) and position; doer (dói-me)",
+          "vocab": "Symptoms (febre, tosse, dor de …), pharmacy, número de utente",
+          "task": "Check in at reception and explain symptoms in Portuguese"
+        },
+        {
+          "id": "b11",
+          "name": "Phone & admin",
+          "when": "Month 8",
+          "grammar": "Near future ir + infinitive; polite forms (podia, queria); comparisons (mais … do que)",
+          "vocab": "Phone openers (Estou a ligar da parte de …), deliveries, bills, school letters",
+          "task": "Handle a courier or marketing call start to finish"
+        }
+      ],
+      "milestones": [
+        "Top 1,500 words in Anki",
+        "Follow a learner podcast (A2) with no transcript",
+        "Write a short message to the school or a business",
+        "Sit CIPLE (A2) around month 8"
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "Independent",
+      "months": "9–15",
+      "summary": "A whole doctor or dentist appointment in Portuguese, follow the news, give opinions, sit DEPLE.",
+      "blocks": [
+        {
+          "id": "b12",
+          "name": "Plans & wishes",
+          "when": "Month 9",
+          "grammar": "Future (falarei) and conditional (falaria, gostaria)",
+          "vocab": "Plans, holidays, travel, surf",
+          "task": "Plan a trip with a local in Portuguese"
+        },
+        {
+          "id": "b13",
+          "name": "Hopes & doubts",
+          "when": "Month 10",
+          "grammar": "Present subjunctive after espero que, quero que, é importante que, talvez",
+          "vocab": "Feelings, health advice, school progress",
+          "task": "Ask the teacher for feedback and what to work on at home"
+        },
+        {
+          "id": "b14",
+          "name": "Doctor stage 3",
+          "when": "Month 11",
+          "grammar": "Future subjunctive after quando / se (quando puder, se tiver)",
+          "vocab": "Medicines, dosage (de oito em oito horas), tests (análises), referrals",
+          "task": "Whole GP or dentist appointment in Portuguese; repeat the advice back"
+        },
+        {
+          "id": "b15",
+          "name": "Opinions",
+          "when": "Month 12",
+          "grammar": "Connectors (no entanto, por isso, além disso, ou seja, embora + subjunctive); por vs para",
+          "vocab": "News topics, environment, local issues",
+          "task": "Give and defend an opinion for 5 minutes with the tutor"
+        },
+        {
+          "id": "b16",
+          "name": "The Portuguese bit",
+          "when": "Month 13",
+          "grammar": "Personal infinitive (para fazermos, antes de saíres); past perfect (tinha feito)",
+          "vocab": "Idioms and everyday expressions",
+          "task": "Follow an RTP news item and summarise it"
+        },
+        {
+          "id": "b17",
+          "name": "Writing",
+          "when": "Month 14",
+          "grammar": "Formal register; letters and emails",
+          "vocab": "Complaints, requests, forms",
+          "task": "Write a 150-word formal email and an opinion piece"
+        },
+        {
+          "id": "b18",
+          "name": "Exam prep",
+          "when": "Month 15",
+          "grammar": "Past DEPLE papers, timed",
+          "vocab": "Gaps from mock exams",
+          "task": "Sit DEPLE (B1)"
+        }
+      ],
+      "milestones": [
+        "Top 2,500 words, then add words only from what you read and hear",
+        "20-minute conversation on a familiar topic",
+        "Read a short novel or graded reader in Portuguese",
+        "Sit DEPLE (B1) around month 15"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "name": "Cafés & ordering",
+      "A1": "Order, ask the price, pay",
+      "A2": "Ask about ingredients, make small talk",
+      "B1": "Chat with the staff you see regularly"
+    },
+    {
+      "name": "Greengrocer & fish counter",
+      "A1": "Ask for quantities; \"É biológico?\"",
+      "A2": "Ask them to clean or cut the fish; understand their questions",
+      "B1": "Ask for cooking advice and what's in season"
+    },
+    {
+      "name": "Couriers at the door",
+      "A1": "Directions script; \"Eu desço já\"",
+      "A2": "Understand most calls; rearrange delivery",
+      "B1": "Handle problems (wrong address, missing item)"
+    },
+    {
+      "name": "Phone calls",
+      "A1": "\"Pode falar mais devagar?\" / \"Pode mandar uma mensagem?\"",
+      "A2": "Understand who's calling and why; say no politely",
+      "B1": "Full conversations on the phone"
+    },
+    {
+      "name": "Post office & parcels",
+      "A1": "Pick up with the code; send a parcel",
+      "A2": "Choose services, handle returns",
+      "B1": "Sort out a lost or damaged parcel"
+    },
+    {
+      "name": "School teacher",
+      "A1": "Greet; ask what to bring",
+      "A2": "Ask how Maria is getting on; understand the answer",
+      "B1": "Discuss progress and concerns in detail"
+    },
+    {
+      "name": "Swim class",
+      "A1": "Understand praise and simple commands",
+      "A2": "Understand the instructor's feedback",
+      "B1": "Discuss progress and next steps"
+    },
+    {
+      "name": "Doctor & dentist",
+      "A1": "Book in Portuguese; appointment in English",
+      "A2": "Check in and explain symptoms in Portuguese",
+      "B1": "Whole appointment in Portuguese"
+    }
+  ],
+  "routine": [
+    {
+      "when": "Every day",
+      "what": "Anki vocab",
+      "time": "10–15 min"
+    },
+    {
+      "when": "Every day",
+      "what": "Listening (car, walks, washing up)",
+      "time": "15–25 min"
+    },
+    {
+      "when": "Every day",
+      "what": "One real exchange in Portuguese",
+      "time": "2–5 min"
+    },
+    {
+      "when": "Once a week",
+      "what": "Tutor lesson on your life and the current block's task",
+      "time": "45–60 min"
+    },
+    {
+      "when": "Twice a week",
+      "what": "Grammar point + shadowing",
+      "time": "20–30 min each"
+    },
+    {
+      "when": "Sunday",
+      "what": "Check the week's hours; pick next week's real-life task",
+      "time": "10 min"
+    }
+  ],
+  "resources": {
+    "A1": [
+      "Portuguese Tune (A1 episodes) — https://portuguesetune.podbean.com",
+      "Portuguese Lab Podcast (A1 listening practice)",
+      "Practice Portuguese (transcripts)"
+    ],
+    "A2": [
+      "Portuguese Tune (A2 episodes)",
+      "Portuguese with Jess (A2–B1)",
+      "Portuguese with Leo",
+      "Children's books read with Maria"
+    ],
+    "B1": [
+      "Intermediate European Portuguese Podcast (Uca Teaches Portuguese)",
+      "Speak Portugal stories",
+      "A História do Dia (Observador)",
+      "RTP Play"
+    ]
+  }
+}
