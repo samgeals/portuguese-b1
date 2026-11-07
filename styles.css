@@ -64,6 +64,7 @@ ul.tasks li.done > label > span:first-of-type { text-decoration: line-through; c
 .sayItem { white-space: nowrap; }
 details.manual { margin: 1rem 0; }
 details.manual summary { cursor: pointer; color: var(--accent); }
+button.openlink { display: inline-block; margin: 0.35rem 0 0 1.6rem; padding: 0.3rem 0.75rem; border-color: var(--accent); color: var(--accent); background: var(--accent-soft); font-size: 0.9rem; }
 button.linkish { border: none; background: none; padding: 0; color: var(--muted); text-decoration: underline; font-size: 0.85rem; }
 
 /* ---------- phone ---------- */
@@ -99,6 +100,7 @@ button, .button, select, input { touch-action: manipulation; }
   .block { grid-template-columns: 1.8rem 1fr; }
   .block dl { grid-template-columns: 1fr; }
   .block dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; margin-top: 0.3rem; }
+  button.openlink { margin-left: 0; min-height: 40px; }
   .say { margin-left: 0; gap: 0.4rem 0.9rem; }
   .sayItem { white-space: normal; }
   .example { white-space: normal; display: block; }

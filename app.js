@@ -158,6 +158,9 @@ function labelCells(root = document) {
 }
 
 // ---------- tabs ----------
+function showTab(name) {
+  document.querySelector(`nav button[data-tab="${name}"]`)?.click();
+}
 function initTabs() {
   document.querySelectorAll("nav button").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -196,6 +199,7 @@ function renderSteps(b) {
               onchange: (e) => { state.progress.steps[k] = e.target.checked ? dateKey() : false; saveProgress(); renderPlan(); renderLog(); },
             }),
             " ", el("span", {}, t.text), t.min ? el("span", { class: "muted" }, ` (${t.min} min)`) : ""),
+          t.open ? openLink(t.open) : "",
           t.say ? el("div", { class: "say" }, ...t.say.map((p) => el("span", { class: "sayItem" }, playBtn(p), p))) : "");
       })));
     if (openDays.has(dayKey) || (!openDays.size && di === firstOpen)) details.open = true;
@@ -206,6 +210,23 @@ function renderSteps(b) {
     el("h4", {}, `${b.steps.title} `, el("span", { class: "muted" }, `· ${done} of ${all.length} steps done`)),
     el("div", { class: "progress" }, el("div", { style: `width:${Math.round((done / all.length) * 100)}%` })),
     ...days);
+}
+
+// A step can point at a tab of the app, e.g. { "tab": "cards", "topic": "Everyday" }.
+const TAB_NAMES = { cards: "Flashcards", phrases: "Phrases", log: "Study log", situations: "Situations" };
+function openLink(target) {
+  const label = `Open ${TAB_NAMES[target.tab] || target.tab}${target.topic ? `: ${target.topic}` : ""} →`;
+  return el("button", { type: "button", class: "openlink", onclick: () => {
+    if (target.tab === "cards") {
+      $("#cardTopic").value = target.topic || "";
+      $("#cardLevel").value = target.level || "";
+      buildQueue();
+    } else if (target.tab === "phrases") {
+      $("#topicFilter").value = target.topic || "";
+      renderPhrases();
+    }
+    showTab(target.tab);
+  } }, label);
 }
 
 function renderPlan() {

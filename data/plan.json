@@ -108,7 +108,8 @@
                   {
                     "min": 10,
                     "text": "Flashcards: one session on the Everyday topic.",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "cards", "topic": "Everyday"}
                   }
                 ]
               },
@@ -139,7 +140,8 @@
                   {
                     "min": 10,
                     "text": "Flashcards: one session (due cards + new ones).",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "cards"}
                   }
                 ]
               },
@@ -181,7 +183,8 @@
                   {
                     "min": 10,
                     "text": "Flashcards: one session.",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "cards"}
                   }
                 ]
               },
@@ -234,7 +237,8 @@
                   {
                     "min": 10,
                     "text": "Flashcards: one session.",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "cards"}
                   }
                 ]
               },
@@ -278,7 +282,8 @@
                   {
                     "min": 10,
                     "text": "Flashcards: one session.",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "cards"}
                   }
                 ]
               },
@@ -314,7 +319,8 @@
                   {
                     "min": 15,
                     "text": "Flashcards: clear every due card.",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "cards"}
                   },
                   {
                     "min": 10,
@@ -327,7 +333,8 @@
                   {
                     "min": 5,
                     "text": "Open the Study log and look at your week: aim for about 5 hours.",
-                    "inApp": true
+                    "inApp": true,
+                    "open": {"tab": "log"}
                   }
                 ]
               }
