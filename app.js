@@ -200,7 +200,8 @@ function renderSteps(b) {
             }),
             " ", el("span", {}, t.text), t.min ? el("span", { class: "muted" }, ` (${t.min} min)`) : ""),
           t.open ? openLink(t.open) : "",
-          t.say ? el("div", { class: "say" }, ...t.say.map((p) => el("span", { class: "sayItem" }, playBtn(p), p))) : "");
+          t.say ? el("div", { class: "say" }, ...t.say.map((p) => el("span", { class: "sayItem" }, playBtn(p), p,
+            translate(p) ? el("span", { class: "en" }, ` · ${translate(p)}`) : ""))) : "");
       })));
     if (openDays.has(dayKey) || (!openDays.size && di === firstOpen)) details.open = true;
     details.addEventListener("toggle", () => { details.open ? openDays.add(dayKey) : openDays.delete(dayKey); });
@@ -210,6 +211,11 @@ function renderSteps(b) {
     el("h4", {}, `${b.steps.title} `, el("span", { class: "muted" }, `· ${done} of ${all.length} steps done`)),
     el("div", { class: "progress" }, el("div", { style: `width:${Math.round((done / all.length) * 100)}%` })),
     ...days);
+}
+
+// English for a Portuguese phrase: the plan's glossary first, then the phrase list.
+function translate(pt) {
+  return state.plan.glossary?.[pt] || state.phrases.find((p) => p.pt === pt)?.en || "";
 }
 
 // A step can point at a tab of the app, e.g. { "tab": "cards", "topic": "Everyday" }.

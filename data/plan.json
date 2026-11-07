@@ -109,7 +109,10 @@
                     "min": 10,
                     "text": "Flashcards: one session on the Everyday topic.",
                     "inApp": true,
-                    "open": {"tab": "cards", "topic": "Everyday"}
+                    "open": {
+                      "tab": "cards",
+                      "topic": "Everyday"
+                    }
                   }
                 ]
               },
@@ -141,7 +144,9 @@
                     "min": 10,
                     "text": "Flashcards: one session (due cards + new ones).",
                     "inApp": true,
-                    "open": {"tab": "cards"}
+                    "open": {
+                      "tab": "cards"
+                    }
                   }
                 ]
               },
@@ -184,7 +189,9 @@
                     "min": 10,
                     "text": "Flashcards: one session.",
                     "inApp": true,
-                    "open": {"tab": "cards"}
+                    "open": {
+                      "tab": "cards"
+                    }
                   }
                 ]
               },
@@ -238,7 +245,9 @@
                     "min": 10,
                     "text": "Flashcards: one session.",
                     "inApp": true,
-                    "open": {"tab": "cards"}
+                    "open": {
+                      "tab": "cards"
+                    }
                   }
                 ]
               },
@@ -283,7 +292,9 @@
                     "min": 10,
                     "text": "Flashcards: one session.",
                     "inApp": true,
-                    "open": {"tab": "cards"}
+                    "open": {
+                      "tab": "cards"
+                    }
                   }
                 ]
               },
@@ -320,7 +331,9 @@
                     "min": 15,
                     "text": "Flashcards: clear every due card.",
                     "inApp": true,
-                    "open": {"tab": "cards"}
+                    "open": {
+                      "tab": "cards"
+                    }
                   },
                   {
                     "min": 10,
@@ -334,7 +347,9 @@
                     "min": 5,
                     "text": "Open the Study log and look at your week: aim for about 5 hours.",
                     "inApp": true,
-                    "open": {"tab": "log"}
+                    "open": {
+                      "tab": "log"
+                    }
                   }
                 ]
               }
@@ -614,5 +629,87 @@
       "A História do Dia (Observador)",
       "RTP Play"
     ]
+  },
+  "glossary": {
+    "Olá": "Hello",
+    "Bom dia": "Good morning",
+    "Boa tarde": "Good afternoon",
+    "Boa noite": "Good evening / Good night",
+    "Adeus": "Goodbye",
+    "Até logo": "See you later",
+    "Até amanhã": "See you tomorrow",
+    "Por favor": "Please",
+    "Obrigada": "Thank you (said by a woman)",
+    "Obrigado": "Thank you (said by a man)",
+    "De nada": "You're welcome",
+    "Desculpe": "Sorry / Excuse me",
+    "Com licença": "Excuse me (to get past)",
+    "pão": "bread",
+    "mãe": "mother",
+    "não": "no / not",
+    "sim": "yes",
+    "bom": "good",
+    "Chamo-me …": "My name is …",
+    "Sou de …": "I'm from …",
+    "Moro em …": "I live in …",
+    "Muito prazer": "Nice to meet you",
+    "Muito prazer!": "Nice to meet you!",
+    "Prazer em conhecê-lo": "Nice to meet you (to a man)",
+    "Prazer em conhecê-la": "Nice to meet you (to a woman)",
+    "Eu sou": "I am",
+    "Tu és": "You are (informal)",
+    "Ele é": "He is",
+    "Ela é": "She is",
+    "Você é": "You are (polite)",
+    "Nós somos": "We are",
+    "Eles são": "They are (men or mixed)",
+    "Elas são": "They are (women)",
+    "O senhor é daqui?": "Are you from here? (polite, to a man)",
+    "A senhora é daqui?": "Are you from here? (polite, to a woman)",
+    "É daqui?": "Are you from here?",
+    "A Maria é muito simpática": "Maria is very nice",
+    "Nós somos vizinhos": "We're neighbours",
+    "zero": "0",
+    "um, uma": "1",
+    "dois, duas": "2",
+    "três": "3",
+    "quatro": "4",
+    "cinco": "5",
+    "seis": "6",
+    "sete": "7",
+    "oito": "8",
+    "nove": "9",
+    "dez": "10",
+    "onze": "11",
+    "doze": "12",
+    "treze": "13",
+    "catorze": "14",
+    "quinze": "15",
+    "dezasseis": "16",
+    "dezassete": "17",
+    "dezoito": "18",
+    "dezanove": "19",
+    "vinte": "20",
+    "Tenho … anos": "I'm … years old",
+    "Quantos anos tem?": "How old are you?",
+    "Qual é o seu número de telefone?": "What's your phone number?",
+    "a mãe": "the mother",
+    "o pai": "the father",
+    "a filha": "the daughter",
+    "o filho": "the son",
+    "o companheiro": "the partner (male)",
+    "a companheira": "the partner (female)",
+    "o irmão": "the brother",
+    "a irmã": "the sister",
+    "Esta é a minha filha, a Maria": "This is my daughter, Maria",
+    "Este é o meu companheiro": "This is my partner",
+    "Ela tem … anos": "She's … years old",
+    "É inglesa.": "She's English. / You're English.",
+    "É inglesa?": "Is she English? / Are you English?",
+    "Tem filhos?": "Do you have children?",
+    "Mora aqui?": "Do you live here?",
+    "Olá, bom dia! Chamo-me …": "Hello, good morning! My name is …",
+    "Moro aqui ao lado": "I live next door",
+    "Desculpe, pode falar mais devagar?": "Sorry, can you speak more slowly?"
   }
 }

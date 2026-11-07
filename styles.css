@@ -62,6 +62,7 @@ ul.tasks li { padding: 0.35rem 0; border-top: 1px dashed var(--line); }
 ul.tasks li.done > label > span:first-of-type { text-decoration: line-through; color: var(--muted); }
 .say { display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; margin: 0.3rem 0 0 1.6rem; font-size: 0.95rem; }
 .sayItem { white-space: nowrap; }
+.sayItem .en { color: var(--muted); font-size: 0.9em; }
 details.manual { margin: 1rem 0; }
 details.manual summary { cursor: pointer; color: var(--accent); }
 button.openlink { display: inline-block; margin: 0.35rem 0 0 1.6rem; padding: 0.3rem 0.75rem; border-color: var(--accent); color: var(--accent); background: var(--accent-soft); font-size: 0.9rem; }
@@ -104,8 +105,9 @@ button, .button, select, input { touch-action: manipulation; }
   .say { margin-left: 0; gap: 0.4rem 0.9rem; }
   .sayItem { white-space: normal; }
   .example { white-space: normal; display: block; }
-  ul.tasks li label { display: flex; gap: 0.5rem; align-items: flex-start; }
-  ul.tasks li label input { flex: none; margin-top: 0.15rem; }
+  ul.tasks li label { display: block; position: relative; padding-left: 1.9rem; }
+  ul.tasks li label input { position: absolute; left: 0; top: 0.15rem; margin: 0; }
+  .sayItem { padding-left: 1.6rem; text-indent: -1.6rem; }
   button.play { min-height: 0; padding: 0.35rem; font-size: 1.15rem; }
   /* tables become stacked cards */
   table.stack, table.stack tbody, table.stack tr, table.stack td { display: block; width: 100%; }
