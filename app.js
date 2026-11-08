@@ -6,6 +6,7 @@ const STORE_KEY = "pt-b1-progress-v1";
 const state = {
   plan: null,
   phrases: [],
+  messages: [],
   progress: { blocks: {}, milestones: {}, known: {}, srs: {}, steps: {}, timer: {}, log: [] },
   cardQueue: [],
   cardIndex: 0,
@@ -92,7 +93,7 @@ function pickVoice() {
   else note.textContent = "";
 }
 function cleanForSpeech(text) {
-  return text.replace(/…/g, "").replace(/\s+\/\s+/g, ", ").replace(/\s+—\s+/g, ". ").trim();
+  return text.replace(/\p{Extended_Pictographic}/gu, "").replace(/…/g, "").replace(/\s+\/\s+/g, ", ").replace(/\s+—\s+/g, ". ").trim();
 }
 async function initServerVoices() {
   try {
@@ -219,8 +220,7 @@ function translate(pt) {
 
 // A Portuguese phrase with its English hidden: hover (or focus) shows it as a tooltip; on a phone, tap to reveal.
 const canHover = matchMedia("(hover: hover)");
-function sayItem(p) {
-  const en = translate(p);
+function sayItem(p, en = translate(p)) {
   if (!en) return el("span", { class: "sayItem" }, playBtn(p), p);
   const item = el("span", { class: "sayItem" }, playBtn(p),
     el("span", {
@@ -233,7 +233,7 @@ function sayItem(p) {
 }
 
 // A step can point at a tab of the app, e.g. { "tab": "cards", "topic": "Everyday" }.
-const TAB_NAMES = { cards: "Flashcards", phrases: "Phrases", log: "Study log", situations: "Situations" };
+const TAB_NAMES = { messages: "Messages", cards: "Flashcards", phrases: "Phrases", log: "Study log", situations: "Situations" };
 function openLink(target) {
   const label = `Open ${TAB_NAMES[target.tab] || target.tab}${target.topic ? `: ${target.topic}` : ""} →`;
   return el("button", { type: "button", class: "openlink", onclick: () => {
@@ -461,7 +461,7 @@ function initCards() {
 //  3. anything you add by hand for study away from the app (tutor, podcasts…).
 const TICK_S = 15;
 const IDLE_MS = 90 * 1000;
-const TIMED_TABS = { cards: "Flashcards", phrases: "Phrases" };
+const TIMED_TABS = { cards: "Flashcards", phrases: "Phrases", messages: "Messages" };
 let lastActive = 0;
 const dateKey = (d = new Date()) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -515,7 +515,7 @@ function renderLog() {
     ),
   );
 
-  const cols = ["Flashcards", "Phrases", "Week plan", "Other"];
+  const cols = ["Flashcards", "Phrases", "Messages", "Week plan", "Other"];
   const byDate = {};
   for (const e of entries) ((byDate[e.date] ||= {})[e.type] = (byDate[e.date][e.type] || 0) + e.minutes);
   const fmt = (m) => (m ? `${Math.round(m)}` : "–");
@@ -523,7 +523,7 @@ function renderLog() {
     el("tr", {}, el("td", {}, date), ...cols.map((c) => el("td", {}, fmt(byDate[date][c]))),
       el("td", {}, el("strong", {}, fmt(Object.values(byDate[date]).reduce((a, b) => a + b, 0))))));
   $("#logRows").replaceChildren(...(rows.length ? rows
-    : [el("tr", {}, el("td", { colspan: "6", class: "muted" }, "Nothing yet. Time starts counting as soon as you study in Flashcards or Phrases, or tick a step on the Plan tab."))]));
+    : [el("tr", {}, el("td", { colspan: "7", class: "muted" }, "Nothing yet. Time starts counting as soon as you study in Flashcards or Phrases, or tick a step on the Plan tab."))]));
 
   labelCells($("#log"));
   $("#manualRows").replaceChildren(...[...state.progress.log]
@@ -574,6 +574,37 @@ function initLog() {
   renderLog();
 }
 
+// ---------- messages (reading and answering real-life texts) ----------
+// Each message: read it (tap or hover a line for English), try a reply yourself, then reveal ready-made replies.
+function renderMessages() {
+  const root = $("#messages");
+  root.replaceChildren(
+    el("p", { class: "muted" }, "Texts like the ones you get in Portugal. Tap a line (or hover on a computer) for the English. Then try writing your answer before you look at the replies."),
+    ...state.messages.map((m, mi) => {
+      const draftKey = `msg-${mi}`;
+      const replies = m.replies.map((r) => {
+        const pt = el("div", { class: "replyPt hidden" }, playBtn(r.pt), " ", el("strong", {}, r.pt));
+        const btn = el("button", { type: "button", class: "linkish", onclick: () => { pt.classList.toggle("hidden"); btn.textContent = pt.classList.contains("hidden") ? "Show Portuguese" : "Hide"; } }, "Show Portuguese");
+        return el("li", {}, el("span", {}, r.en), " ", btn, pt);
+      });
+      return el("article", { class: "message" },
+        el("div", { class: "msgHead" }, el("strong", {}, m.from), el("span", { class: "muted" }, ` · ${m.about} `), el("span", { class: "pill" }, m.level)),
+        el("div", { class: "bubble" },
+          ...m.lines.map((l) => el("div", { class: "msgLine" }, sayItem(l.pt, l.en))),
+          el("button", { type: "button", class: "linkish playAll", onclick: () => speak(m.lines.map((l) => l.pt).join(". ")) }, "🔊 Play the whole message")),
+        el("details", { class: "words" }, el("summary", {}, "Words to know"),
+          el("ul", {}, ...m.words.map((w) => el("li", {}, playBtn(w.pt), el("strong", {}, w.pt), el("span", { class: "muted" }, ` · ${w.en}`))))),
+        el("label", { class: "draftLabel" }, "Your reply",
+          el("textarea", { rows: "2", placeholder: "Try it in Portuguese first…", lang: "pt-PT", spellcheck: "true",
+            oninput: (e) => { (state.progress.drafts ||= {})[draftKey] = e.target.value; saveProgress(); } })),
+        el("h4", {}, "Ways to reply"),
+        el("ol", { class: "replies" }, ...replies),
+      );
+    }),
+  );
+  root.querySelectorAll("textarea").forEach((t, i) => { t.value = state.progress.drafts?.[`msg-${i}`] || ""; });
+}
+
 // ---------- situations ----------
 function renderSituations() {
   $("#situations").replaceChildren(
@@ -593,14 +624,17 @@ function renderAll() {
   renderPhrases();
   renderLog();
   renderSituations();
+  renderMessages();
   buildQueue();
 }
 
 async function boot() {
-  const [plan, phrases] = await Promise.all([
+  const [plan, phrases, messages] = await Promise.all([
     fetch("data/plan.json").then((r) => r.json()),
     fetch("data/phrases.json").then((r) => r.json()),
+    fetch("data/messages.json").then((r) => r.json()).catch(() => []),
   ]);
+  state.messages = messages;
   state.plan = plan;
   state.phrases = phrases;
   $("#title").textContent = plan.title;
@@ -613,6 +647,7 @@ async function boot() {
   renderPlan();
   renderPhrases();
   renderSituations();
+  renderMessages();
   initCards();
   initLog();
   initTimer();

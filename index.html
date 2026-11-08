@@ -28,6 +28,7 @@
     <button data-tab="plan" class="active">Plan</button>
     <button data-tab="phrases">Phrases</button>
     <button data-tab="cards">Flashcards</button>
+    <button data-tab="messages">Messages</button>
     <button data-tab="log">Study log</button>
     <button data-tab="situations">Situations</button>
   </nav>
@@ -77,7 +78,7 @@
       <p class="muted small">Logged automatically: time you spend in Flashcards and Phrases (it pauses when you stop for 90 seconds) and the minutes of each week-plan step you tick.</p>
       <div id="hoursSummary"></div>
       <table class="grid">
-        <thead><tr><th>Date</th><th>Flashcards</th><th>Phrases</th><th>Week plan</th><th>Other</th><th>Total (min)</th></tr></thead>
+        <thead><tr><th>Date</th><th>Flashcards</th><th>Phrases</th><th>Messages</th><th>Week plan</th><th>Other</th><th>Total (min)</th></tr></thead>
         <tbody id="logRows"></tbody>
       </table>
       <details class="manual">
@@ -98,6 +99,8 @@
         <label class="button">Import progress <input type="file" id="importFile" accept="application/json" hidden /></label>
       </div>
     </section>
+
+    <section id="messages" class="tab"></section>
 
     <section id="situations" class="tab"></section>
   </main>

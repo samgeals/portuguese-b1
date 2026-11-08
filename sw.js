@@ -1,10 +1,10 @@
 // Offline support: keeps a copy of the app so it opens without a connection.
 // Files are served from the copy straight away and refreshed in the background,
 // so a change shows up the second time you open the app. Bump VERSION when files are added.
-const VERSION = "pt-b1-v4";
+const VERSION = "pt-b1-v5";
 const FILES = [
   "./", "index.html", "styles.css", "app.js", "manifest.webmanifest",
-  "data/plan.json", "data/phrases.json",
+  "data/plan.json", "data/phrases.json", "data/messages.json",
   "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png",
 ];
 

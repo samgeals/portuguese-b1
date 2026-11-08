@@ -1,0 +1,163 @@
+[
+  {
+    "from": "A friend (WhatsApp)",
+    "about": "Changing a meeting time",
+    "level": "A2",
+    "lines": [
+      { "pt": "Olaaa", "en": "Hiii" },
+      { "pt": "Amanhã preciso de sair às 17h.", "en": "Tomorrow I need to leave at 5pm." },
+      { "pt": "Podes estar na Cachouça às 16h15?", "en": "Can you be at Cachouça at 4:15?" },
+      { "pt": "Assim reuníamos a essa hora.", "en": "That way we'd meet at that time." },
+      { "pt": "Beijinho", "en": "xx (literally 'little kiss')" }
+    ],
+    "words": [
+      { "pt": "podes", "en": "can you (informal, tu)" },
+      { "pt": "preciso de", "en": "I need to" },
+      { "pt": "assim", "en": "that way / so" },
+      { "pt": "beijinho", "en": "friendly sign-off, like xx" }
+    ],
+    "replies": [
+      { "en": "Yes, 4:15 is great. See you tomorrow!", "pt": "Olá! Sim, claro, às 16h15 está ótimo. Até amanhã! Beijinho" },
+      { "en": "Deal! See you tomorrow.", "pt": "Combinado! Até amanhã 😊 Beijinho" },
+      { "en": "Sorry, I can't at 4:15. Could it be 4:30?", "pt": "Olá! Desculpa, às 16h15 não consigo. Pode ser às 16h30?" }
+    ]
+  },
+  {
+    "from": "The teacher (school app)",
+    "about": "Swimming day reminder",
+    "level": "A2",
+    "lines": [
+      { "pt": "Bom dia!", "en": "Good morning!" },
+      { "pt": "Amanhã é dia de natação.", "en": "Tomorrow is swimming day." },
+      { "pt": "Não se esqueçam do fato de banho, da touca e da toalha.", "en": "Don't forget the swimsuit, the swim cap and the towel." },
+      { "pt": "Obrigada!", "en": "Thank you!" }
+    ],
+    "words": [
+      { "pt": "não se esqueçam", "en": "don't forget (to several people)" },
+      { "pt": "o fato de banho", "en": "swimsuit" },
+      { "pt": "a touca", "en": "swim cap" },
+      { "pt": "a toalha", "en": "towel" }
+    ],
+    "replies": [
+      { "en": "Good morning! Thanks for the reminder.", "pt": "Bom dia! Obrigada pelo aviso." },
+      { "en": "She'll miss school tomorrow, she's ill.", "pt": "Bom dia! Ela vai faltar amanhã, está doente." },
+      { "en": "What time does swimming finish?", "pt": "Bom dia! A que horas acaba a natação?" }
+    ]
+  },
+  {
+    "from": "Delivery company (SMS)",
+    "about": "Parcel arriving today",
+    "level": "A2",
+    "lines": [
+      { "pt": "A sua encomenda será entregue hoje entre as 14h e as 18h.", "en": "Your parcel will be delivered today between 2pm and 6pm." },
+      { "pt": "Se não estiver em casa, responda com um novo dia.", "en": "If you won't be at home, reply with a new day." }
+    ],
+    "words": [
+      { "pt": "a encomenda", "en": "parcel / order" },
+      { "pt": "será entregue", "en": "will be delivered" },
+      { "pt": "entre … e …", "en": "between … and …" },
+      { "pt": "se não estiver", "en": "if you aren't (there)" }
+    ],
+    "replies": [
+      { "en": "I'm at home, thank you.", "pt": "Estou em casa, obrigada." },
+      { "en": "I'm out today. Could it be tomorrow morning?", "pt": "Hoje não estou. Pode ser amanhã de manhã?" },
+      { "en": "You can leave it with the next-door neighbour, please.", "pt": "Pode deixar com o vizinho do lado, por favor." }
+    ]
+  },
+  {
+    "from": "Courier (text from the door)",
+    "about": "Courier is outside",
+    "level": "A1",
+    "lines": [
+      { "pt": "Boa tarde, estou à porta com uma encomenda.", "en": "Good afternoon, I'm at the door with a parcel." },
+      { "pt": "Está em casa?", "en": "Are you at home?" }
+    ],
+    "words": [
+      { "pt": "à porta", "en": "at the door" },
+      { "pt": "está em casa?", "en": "are you at home? (polite)" }
+    ],
+    "replies": [
+      { "en": "Yes, I'm coming down now!", "pt": "Sim, já desço!" },
+      { "en": "One minute, please!", "pt": "Um minuto, por favor!" },
+      { "en": "I'm not in. Can you leave it at the door?", "pt": "Não estou. Pode deixar à porta, por favor?" }
+    ]
+  },
+  {
+    "from": "Dental clinic (SMS)",
+    "about": "Appointment reminder",
+    "level": "A2",
+    "lines": [
+      { "pt": "Lembramos a sua consulta no dia 12/11 às 10h00.", "en": "We're reminding you of your appointment on 12 November at 10:00." },
+      { "pt": "Para confirmar, responda SIM.", "en": "To confirm, reply YES." },
+      { "pt": "Para desmarcar, ligue para a clínica.", "en": "To cancel, call the clinic." }
+    ],
+    "words": [
+      { "pt": "a consulta", "en": "appointment" },
+      { "pt": "lembramos", "en": "we remind (you)" },
+      { "pt": "desmarcar", "en": "to cancel (an appointment)" },
+      { "pt": "remarcar", "en": "to rebook / move (an appointment)" }
+    ],
+    "replies": [
+      { "en": "Yes (confirm).", "pt": "SIM" },
+      { "en": "I need to move the appointment. Could it be another day?", "pt": "Bom dia, preciso de remarcar a consulta. Pode ser noutro dia?" }
+    ]
+  },
+  {
+    "from": "Your neighbour",
+    "about": "She took in your parcel",
+    "level": "A2",
+    "lines": [
+      { "pt": "Olá vizinha!", "en": "Hi neighbour!" },
+      { "pt": "Recebi uma encomenda sua.", "en": "I got a parcel of yours." },
+      { "pt": "Quando quiser, pode vir buscá-la.", "en": "Whenever you like, you can come and get it." }
+    ],
+    "words": [
+      { "pt": "a vizinha", "en": "neighbour (woman)" },
+      { "pt": "quando quiser", "en": "whenever you like" },
+      { "pt": "vir buscar", "en": "to come and pick up" }
+    ],
+    "replies": [
+      { "en": "Thank you so much! I'll pop round at 6, is that OK?", "pt": "Muito obrigada! Passo aí às 18h, pode ser?" },
+      { "en": "That's so kind, thank you! I'm coming now.", "pt": "Que simpática, obrigada! Vou já." }
+    ]
+  },
+  {
+    "from": "Another mum (WhatsApp)",
+    "about": "Birthday party invitation",
+    "level": "A2",
+    "lines": [
+      { "pt": "Olá! Sábado é o aniversário da Inês.", "en": "Hi! Saturday is Inês's birthday." },
+      { "pt": "Fazemos uma festa lá em casa às 15h.", "en": "We're having a party at our place at 3pm." },
+      { "pt": "Vêm? 🎉", "en": "Are you coming? (to you and your family)" }
+    ],
+    "words": [
+      { "pt": "o aniversário", "en": "birthday" },
+      { "pt": "lá em casa", "en": "at our place" },
+      { "pt": "vêm?", "en": "are you (all) coming?" },
+      { "pt": "o convite", "en": "invitation" }
+    ],
+    "replies": [
+      { "en": "Yes, we're coming, thanks for the invite! Shall we bring anything?", "pt": "Olá! Vamos sim, obrigada pelo convite! Levamos alguma coisa?" },
+      { "en": "What a shame, we can't this Saturday. Happy birthday to Inês!", "pt": "Que pena, este sábado não podemos. Parabéns à Inês! Beijinhos" }
+    ]
+  },
+  {
+    "from": "Swimming pool (SMS)",
+    "about": "Class cancelled",
+    "level": "A2",
+    "lines": [
+      { "pt": "Informamos que a aula de natação de hoje foi cancelada.", "en": "Please note that today's swimming class has been cancelled." },
+      { "pt": "Pedimos desculpa pelo incómodo.", "en": "We apologise for the inconvenience." }
+    ],
+    "words": [
+      { "pt": "informamos que", "en": "we'd like to let you know that" },
+      { "pt": "foi cancelada", "en": "was cancelled" },
+      { "pt": "o incómodo", "en": "inconvenience" },
+      { "pt": "repor a aula", "en": "to make up the class" }
+    ],
+    "replies": [
+      { "en": "Thanks for letting me know. Will the class be made up?", "pt": "Obrigada pelo aviso. A aula vai ser reposta?" },
+      { "en": "OK, thank you!", "pt": "Ok, obrigada!" }
+    ]
+  }
+]

@@ -31,6 +31,7 @@ It then opens full screen like an app and works without a connection (`sw.js` ke
 | --- | --- |
 | `data/plan.json` | Stages (A1, A2, B1), blocks (grammar, vocab, real-life task), milestones, pronunciation, routine, resources, situations |
 | `data/phrases.json` | Phrases tagged by topic and level |
+| `data/messages.json` | Real-life texts for the Messages tab: lines with English, key words, ready-made replies |
 | `index.html`, `styles.css`, `app.js` | The app: Plan, Phrases, Flashcards, Study log, Situations |
 | `scripts/to-anki-csv.mjs` | Exports the phrases as an Anki CSV |
 | `manifest.webmanifest`, `sw.js`, `icons/` | Phone install and offline support |
